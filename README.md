@@ -17,7 +17,7 @@
 
     * React, Javascript y CSS
 
-##  Enlace a la Aplicación (Opcional)
+##  Enlace a la Aplicación
 
 https://password-tp2-six.vercel.app/
 
