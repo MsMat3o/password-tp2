@@ -1,0 +1,108 @@
+/* Estilos originales de App.css */
+body {
+  background-color: #1a1a1a; /* Fondo gris oscuro */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor raíz */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Contenedor con fondo semi-transparente */
+.content-wrapper {
+  background: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+  padding: 2rem;
+  border-radius: 8px;
+  color: white;
+}
+
+/* Logo */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #090b20aa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Animación del logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Preferencia de movimiento */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Tarjeta */
+.card {
+  padding: 2em;
+}
+
+/* Texto */
+.read-the-docs {
+  color: #888;
+}
+
+/* Nuevos estilos para el input (antes en style.css) */
+input {
+  width: 100%;
+  padding: 0.6em 1em; /* Reducimos el padding vertical y horizontal */
+  margin: 8px 0; /* Reducimos el margen vertical */
+  font-size: 0.9em; /* Opcional: un tamaño de fuente ligeramente menor puede verse más elegante */
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Un radio de borde un poco menor puede verse más moderno */
+  box-sizing: border-box;
+  background-color: #f9f9f9; /* Un tono grisáceo muy claro puede ser más sutil */
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Solo transicionamos las propiedades enfocadas */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); /* Una sombra más sutil */
+}
+
+input:focus {
+  border-color: #007bff; /* Un color de foco más profesional (azul estándar) */
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.5); /* Una sombra de foco más suave */
+}
+
+@media (prefers-color-scheme: dark) {
+  input {
+    background-color: #333; /* Un gris oscuro para el modo oscuro */
+    color: #eee; /* Texto más claro en modo oscuro */
+    border: 1px solid #555;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.05); /* Sombra sutil en modo oscuro */
+  }
+
+  input:focus {
+    border-color: #5bc0de; /* Un color de foco diferente para el modo oscuro (cian) */
+    box-shadow: 0 0 6px rgba(91, 192, 222, 0.7); /* Sombra de foco en modo oscuro */
+  }
+}
+
+.component-section {
+  margin-bottom: 15px; /* Reducimos un poco el margen inferior */
+}
