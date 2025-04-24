@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PasswordInput from "./components/PasswordInput";
 import PasswordStrength from "./components/PasswordStrength";
-import PasswordControls from "./components/passwordcontrols";
+import PasswordControls from "./components/PasswordControls";
 
 function App() {
   const [password, setPassword] = useState("");
